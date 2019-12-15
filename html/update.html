@@ -1,0 +1,57 @@
+<html>
+
+  <head>
+    <title>Update Product</title>
+    <meta charset="utf-8" />
+    <script src="../js/initialize.js"></script>
+    <script src="../js/update.js" defer="defer"></script>
+  </head>
+
+  <body>
+    <form method="get" action="../index.html">
+      <button type="submit">Back</button>
+    </form>
+    <form>
+      <div>
+        <label for="product-select">Select a product:</label>
+        <select name="product" id="product-select">
+          <option value="">--Please choose an option--</option>
+        </select>
+      </div>
+	  <div>
+      <div>
+        <label for="productId">ID</label>
+        <input type="number" id="productId" name="productId" required />
+      </div>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="cost">Cost</label>
+        <input type="number" id="cost" name="cost" value="0.0" required />
+      </div>
+	  <div>
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" value="0" required />
+      </div>
+	  <div>
+        <label for="msrp">MSRP</label>
+        <input type="number" id="msrp" name="msrp" value="0.0" required />
+      </div>
+	  <div>
+        <label for="category">Category</label>
+        <input type="text" id="category" name="category" required />
+      </div>
+	  <div>
+        <label for="unitSold">Units Sold</label>
+        <input type="number" id="unitSold" name="unitSold" value="0" required />
+      </div>
+	  </div>
+      <div>
+        <input type="button" value="Update" onclick="updateProduct();" />
+      </div>
+    </form>
+  </body>
+
+</html>

@@ -1,0 +1,49 @@
+<html>
+
+  <head>
+    <title>Add</title>
+    <meta charset="utf-8" />
+    <script src="../js/initialize.js"></script>
+    <script src="../js/create.js"></script>
+  </head>
+
+  <body>
+    <form method="get" action="../index.html">
+      <button type="submit">Back</button>
+    </form>
+    <form>
+      <div>
+        <label for="productId">ID</label>
+        <input type="number" id="productId" name="productId" require />
+      </div>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" require />
+      </div>
+      <div>
+        <label for="cost">Cost</label>
+        <input type="number" id="cost" name="cost" value="0.0" require />
+      </div>
+	  <div>
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" value="0" require />
+      </div>
+	  <div>
+        <label for="msrp">MSRP</label>
+        <input type="number" id="msrp" name="msrp" value="0.0" require />
+      </div>
+	  <div>
+        <label for="category">Category</label>
+        <input type="text" id="category" name="category" require />
+      </div>
+	  <div>
+        <label for="unitSold">Units Sold</label>
+        <input type="number" id="unitSold" name="unitSold" value="0" require />
+      </div>
+      <div>
+        <input type="button" value="Create" onclick="addStock();" />
+      </div>
+    </form>
+  </body>
+
+</html>

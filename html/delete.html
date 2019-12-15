@@ -1,0 +1,27 @@
+<html>
+
+  <head>
+    <title>Delete Product</title>
+    <meta charset="utf-8" />
+    <script src="../js/initialize.js"></script>
+    <script src="../js/delete.js" defer="defer"></script>
+  </head>
+
+  <body>
+    <form method="get" action="../index.html">
+      <button type="submit">Back</button>
+    </form>
+    <form>
+      <div>
+        <label for="product-select">Select a product:</label>
+        <select name="products" id="product-select">
+          <option value="">--Please choose an option--</option>
+        </select>
+      </div>
+      <div>
+        <input type="button" value="Delete" onclick="deleteProduct();" />
+      </div>
+    </form>
+  </body>
+
+</html>
